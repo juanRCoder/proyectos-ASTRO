@@ -1,0 +1,28 @@
+---
+import AddToCart from './AddToCart';
+import CustomImage  from '../utils/CustomImage.astro';
+import data from '../utils/data.json';
+
+---
+
+{data.map((dessert) => (
+  <section class="img">
+    <div class="relative mb-7">
+      <CustomImage 
+        path={dessert.image}
+        alt='imagen1'
+        load="eager"
+        className=''
+      />
+      <div class="absolute -bottom-[17px] left-1/2 transform -translate-x-1/2">
+        <AddToCart client:load
+          nameProduct={dessert.name}
+          priceProduct={Number((dessert.price).toFixed(2))}
+        />
+      </div>
+    </div>
+    <p class="text-sm text-orange-950/50">{dessert.type}</p>
+    <p class="font-semibold text-orange-950">{dessert.name}</p>
+    <p class="font-semibold text-orange-500">${(dessert.price).toFixed(2)}</p>
+  </section>
+))}

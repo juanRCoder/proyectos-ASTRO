@@ -1,0 +1,12 @@
+---
+import CountProducts from "./CountProducts";
+import ProductsInCart from "./ProductsInCart";
+
+---
+
+<aside class="rounded-xl">
+  <section class="top-10 fixed rounded-xl w-[22rem] bg-white">
+    <CountProducts client:load/>
+    <ProductsInCart client:load/>
+  </section>
+</aside>

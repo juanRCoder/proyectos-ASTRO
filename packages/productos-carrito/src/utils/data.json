@@ -1,0 +1,56 @@
+[
+  {
+    "image": "image-waffle-desktop.jpg",
+    "type": "Waffle",
+    "name": "Waffle with Berries",
+    "price": 6.5
+  },
+  {
+    "image": "image-creme-brulee-desktop.jpg",
+    "type": "Crème Brûlée",
+    "name": "Vanilla Bean Crème Brûlée",
+    "price": 7
+  },
+  {
+    "image": "image-macaron-desktop.jpg",
+    "type": "Macaron",
+    "name": "Macaron Mix of Five",
+    "price": 8
+  },
+  {
+    "image": "image-tiramisu-desktop.jpg",
+    "type": "Tiramisu",
+    "name": "Classic Tiramisu",
+    "price": 5.5
+  },
+  {
+    "image": "image-baklava-desktop.jpg",
+    "type": "Baklava",
+    "name": "Pistachio Baklava",
+    "price": 4
+  },
+  {
+    "image": "image-meringue-desktop.jpg",
+    "type": "Pie",
+    "name": "Lemon Meringue Pie",
+    "price": 5
+  },
+  {
+    "image": "image-cake-desktop.jpg",
+    "type": "Cake",
+    "name": "Red Velvet Cake",
+    "price": 4.5
+  },
+  {
+    "image": "image-brownie-desktop.jpg",
+    "type": "Brownie",
+    "name": "Salted Caramel Brownie",
+    "price": 5.5
+  },
+  {
+    "image": "image-panna-cotta-desktop.jpg",
+    "type": "Panna Cotta",
+    "name": "Vanilla Panna Cotta",
+    "price": 6.5
+  }
+]
