@@ -3,6 +3,7 @@ import { create } from "zustand";
 export interface ProductCart {
   name: string;
   price: number;
+  img?: string;
   priceTotal: number;
   count: number;
 }
@@ -17,6 +18,7 @@ export interface InterfaceStore {
   resetCount?: number | null; 
   totalProducts: () => void;
   deleteProductCart: (nameProduct: string) => void;
+  resetCartOrder: () => void;
 }
 
 export const useStore = create<InterfaceStore>((set) => ({
@@ -68,6 +70,12 @@ export const useStore = create<InterfaceStore>((set) => ({
       productCart: state.productCart.filter((pr) => pr.name !== nameProduct),
       resetCount: state.resetCount === 0 ? 1 : 0,
     }
+  }),
+  resetCartOrder: () => set((state) => {
+    return {
+      productCart: [],
+      resetCount: state.resetCount === 0 ? 1 : 0,
+      countProducts: state.countProducts === 0 ? 1 : 0
+    }
   })
-
 }));

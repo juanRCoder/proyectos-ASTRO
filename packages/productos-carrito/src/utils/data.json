@@ -1,54 +1,72 @@
 [
   {
     "image": "image-waffle-desktop.jpg",
+    "image_tablet": "image-waffle-tablet.jpg",
+    "image_mobile": "image-waffle-mobile.jpg",
     "type": "Waffle",
     "name": "Waffle with Berries",
     "price": 6.5
   },
   {
     "image": "image-creme-brulee-desktop.jpg",
+    "image_tablet": "image-creme-brulee-tablet.jpg",
+    "image_mobile": "image-creme-brulee-mobile.jpg",
     "type": "Crème Brûlée",
     "name": "Vanilla Bean Crème Brûlée",
     "price": 7
   },
   {
     "image": "image-macaron-desktop.jpg",
+    "image_tablet": "image-macaron-tablet.jpg",
+    "image_mobile": "image-macaron-mobile.jpg",
     "type": "Macaron",
     "name": "Macaron Mix of Five",
     "price": 8
   },
   {
     "image": "image-tiramisu-desktop.jpg",
+    "image_tablet": "image-tiramisu-tablet.jpg",
+    "image_mobile": "image-tiramisu-mobile.jpg",
     "type": "Tiramisu",
     "name": "Classic Tiramisu",
     "price": 5.5
   },
   {
     "image": "image-baklava-desktop.jpg",
+    "image_tablet": "image-baklava-tablet.jpg",
+    "image_mobile": "image-baklava-mobile.jpg",
     "type": "Baklava",
     "name": "Pistachio Baklava",
     "price": 4
   },
   {
     "image": "image-meringue-desktop.jpg",
+    "image_tablet": "image-baklava-tablet.jpg",
+    "image_mobile": "image-baklava-mobile.jpg",
     "type": "Pie",
     "name": "Lemon Meringue Pie",
     "price": 5
   },
   {
     "image": "image-cake-desktop.jpg",
+    "image_tablet": "image-cake-tablet.jpg",
+    "image_mobile": "image-cake-mobile.jpg",
     "type": "Cake",
     "name": "Red Velvet Cake",
     "price": 4.5
   },
   {
     "image": "image-brownie-desktop.jpg",
+    "image_tablet": "image-brownie-tablet.jpg",
+    "image_mobile": "image-brownie-mobile.jpg",
     "type": "Brownie",
     "name": "Salted Caramel Brownie",
     "price": 5.5
   },
   {
     "image": "image-panna-cotta-desktop.jpg",
+    "image_tablet": "image-panna-cotta-tablet.jpg",
+    "image_mobile": "image-panna-cotta-mobile.jpg",
     "type": "Panna Cotta",
     "name": "Vanilla Panna Cotta",
     "price": 6.5

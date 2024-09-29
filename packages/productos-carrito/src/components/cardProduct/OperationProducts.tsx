@@ -1,15 +1,16 @@
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { CiCircleMinus } from "react-icons/ci";
-import { useStore } from "../store/productsStore";
+import { useStore } from "../../store/productsStore";
 
 export type propAddCartProducts = {
   nameProduct: string;
   priceProduct: number;
+  imageProduct: string
   count: number;
   setCount: (n: number) => void
 }
 
-export default function AddRestProduct({ count, setCount, nameProduct, priceProduct }: propAddCartProducts) {
+export default function OperationProducts({ count, setCount, nameProduct, priceProduct, imageProduct }: propAddCartProducts) {
   const { setCountProducts, setProductCart, seTtotalPrices } = useStore();
 
   const handleCountAdd = () => {
@@ -20,7 +21,8 @@ export default function AddRestProduct({ count, setCount, nameProduct, priceProd
       name: nameProduct,
       price: priceProduct,
       priceTotal: priceProduct,
-      count: 1
+      count: 1,
+      img: imageProduct
     })
     seTtotalPrices()
   }
@@ -42,11 +44,11 @@ export default function AddRestProduct({ count, setCount, nameProduct, priceProd
   return (
     <>
       <button onClick={handleCountMinus}>
-        <CiCircleMinus className="w-6 h-6" />
+        <CiCircleMinus className="sm:w-6 sm:h-6 w-8 h-8" />
       </button>
-      <p>{count}</p>
+      <p className="sm:text-sm text-lg">{count}</p>
       <button onClick={handleCountAdd}>
-        <IoIosAddCircleOutline className="w-6 h-6" />
+        <IoIosAddCircleOutline className="sm:w-6 sm:h-6 w-8 h-8" />
       </button>
     </>
   )

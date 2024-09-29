@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react"
-import iconAddToCard from '../assets/icons/icon-add-to-cart.svg';
-import { useStore } from "../store/productsStore";
-import AddRestProduct from "./AddRestProduct";
+import { useStore } from "../../store/productsStore";
+import OperationProducts from "./OperationProducts";
 
 export type propAddCartProducts = {
   nameProduct: string;
   priceProduct: number;
+  imageProduct: string;
 }
 
-export default function AddToCart({ nameProduct, priceProduct }: propAddCartProducts) {
+export default function AddToCart(
+  { nameProduct, priceProduct, imageProduct }: propAddCartProducts) {
   // Instancias de estado global 
   const resetCount = useStore((state) => state.resetCount)
 
@@ -23,26 +24,27 @@ export default function AddToCart({ nameProduct, priceProduct }: propAddCartProd
     <>
       <div
         onMouseLeave={() => setView(true)}
-        className="relative flex justify-evenly items-center gap-8 px-4 py-[8px] rounded-full bg-orange-500 text-white cursor-pointer"
+        className="sm:py-[8px] sm:px-6 flex justify-evenly items-center gap-8 px-6 py-3 rounded-full bg-orange-500 text-white cursor-pointer"
       >
-        <AddRestProduct
+        <OperationProducts
           count={count}
           setCount={setCount}
           nameProduct={nameProduct}
           priceProduct={priceProduct}
+          imageProduct={imageProduct}
         />
+        
         {view && (
           <span
             onClick={() => setView(false)}
-            className="px-3 top-0 left-0 flex justify-center items-center gap-2 absolute w-full h-full bg-white text-black outline outline-1 outline-orange-500 rounded-full hover:text-orange-500 cursor-pointer"
+            className="px-3 top-0 left-0 flex justify-center items-center gap-2 absolute w-full h-full bg-white text-black outline outline-1 outline-orange-500 rounded-full cursor-pointer"
           >
             <img
-              className="img"
-              src={iconAddToCard.src}
+              src="/icons/icon-add-to-cart.svg"
               alt="addtoCard SVG"
               loading="eager"
             />
-            <p className="text-sm font-semibold">Add to Card</p>
+            <p className="sm:text-sm text-orange-950 hover:text-orange-500 text-lg font-semibold">Add to Card</p>
           </span>
         )}
       </div>

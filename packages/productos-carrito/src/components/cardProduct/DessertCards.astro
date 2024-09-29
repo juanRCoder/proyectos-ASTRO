@@ -1,0 +1,38 @@
+---
+import AddToCart from './AddToCart';
+import data from '../../utils/data.json';
+
+---
+
+{data.map((dessert) => (
+  <section class="img">
+    <div class="relative mb-7">
+      <picture>
+        <source 
+          media="(min-width: 1024px)"
+          srcset={`/images/${dessert.image}`} 
+        />
+        <source 
+          media="(min-width: 768px)"
+          srcset={`/images/${dessert.image_tablet}`} 
+        />
+        <img 
+        src={`/images/${dessert.image_mobile}`}
+        alt='imagen1'
+        loading="eager"
+        class="w-full"
+      />
+      </picture>
+      <div class="absolute -bottom-[17px] left-1/2 transform -translate-x-1/2">
+        <AddToCart client:load
+          nameProduct={dessert.name}
+          priceProduct={Number((dessert.price).toFixed(2))}
+          imageProduct={dessert.image}
+        />
+      </div>
+    </div>
+    <p class="text-lg sm:text-base text-orange-950/50">{dessert.type}</p>
+    <p class="text-xl sm:text-base font-semibold text-orange-950">{dessert.name}</p>
+    <p class="text-xl sm:text-base font-semibold text-orange-500">${(dessert.price).toFixed(2)}</p>
+  </section>
+))}
