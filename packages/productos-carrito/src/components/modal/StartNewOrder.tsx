@@ -13,7 +13,7 @@ export default function StartNewOrder({ toggleModal }: { toggleModal: (bool: boo
     <div>
       <button
         onClick={handleSubmit}
-        className='sm:mt-0 sm:text-base sm:py-3 mt-5 w-full text-2xl py-4 bg-orange-500 hover:bg-orange-700 transition text-white rounded-full'
+        className='sm:mt-0 sm:text-base sm:py-3 mt-5 w-full text-lg py-4 bg-orange-500 hover:bg-orange-700 transition text-white rounded-full'
       >
         Start New Order
       </button>
