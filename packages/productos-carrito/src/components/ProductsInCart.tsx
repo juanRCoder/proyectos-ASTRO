@@ -25,6 +25,7 @@ export default function ProductsInCart() {
                 <figure>
                   <img
                     src="/icons/icon-carbon-neutral.svg"
+                    alt='icon carbon-neutral'
                   />
                 </figure>
                 <p className='text-sm text-orange-950/70 mb-5'>

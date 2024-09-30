@@ -43,13 +43,13 @@ export default function OperationProducts({ count, setCount, nameProduct, priceP
 
   return (
     <>
-      <button onClick={handleCountMinus}>
+      <span onClick={handleCountMinus}>
         <CiCircleMinus className="sm:w-6 sm:h-6 w-8 h-8" />
-      </button>
+      </span>
       <p className="sm:text-sm text-lg">{count}</p>
-      <button onClick={handleCountAdd}>
+      <span onClick={handleCountAdd}>
         <IoIosAddCircleOutline className="sm:w-6 sm:h-6 w-8 h-8" />
-      </button>
+      </span>
     </>
   )
 }

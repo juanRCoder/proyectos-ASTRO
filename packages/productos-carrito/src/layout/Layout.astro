@@ -8,6 +8,17 @@ const {title} = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="keywords" content="carrito de postres, productos, ordenar postres, favoritos, compra, dulces, tienda de postres" />
+		<meta name="author" content="juanRCoder" />
+		<meta name="description" content="Agrega tus postres favoritos a un carrito y revisa la orden seleccionada. Disfruta de una experiencia sencilla para gestionar tus pedidos." />
+		<meta name="robots" content="index">:
+		<meta property="og:title" content="Productos - Carrito" />
+		<meta property="og:description" content="Selecciona tus postres favoritos y revisa tu orden en nuestra tienda online de postres." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://productos-carrito-as02.netlify.app/" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Productos - Carrito" />
+		<meta name="twitter:description" content="Elige y añade tus postres favoritos a un carrito de compras y visualiza tu pedido final." />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +26,9 @@ const {title} = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<title>{ title }</title>
 	</head>
-	<body class="font-redHatText p-8 bg-slate-50">
-    <slot />
+	<body>
+		<main class="bg-slate-50 p-8">
+			<slot />
+		</main>
 	</body>
 </html>

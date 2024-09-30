@@ -15,9 +15,9 @@ export default function DessertsCart() {
     <article className='scrollBar overflow-auto max-h-80'>
       {productCart.map((pr) => (
         <section key={pr.name} className='flex flex-row-reverse justify-between mx-5 pb-3 mb-3 border-b'>
-          <button onClick={() => deleteProduct(pr.name)}>
+          <span onClick={() => deleteProduct(pr.name)} className='cursor-pointer'>
             <IoIosCloseCircleOutline className='font-thin text-amber-700/40 h-7 w-7' />
-          </button>
+          </span>
           <div className='flex flex-col gap-1'>
             <p className='text-[16px] font-semibold text-orange-900'>{pr.name}</p>
             <p className='text-orange-950/50 font-semibold'>

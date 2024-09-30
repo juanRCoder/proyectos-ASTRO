@@ -41,7 +41,7 @@ export default function AddToCart(
           >
             <img
               src="/icons/icon-add-to-cart.svg"
-              alt="addtoCard SVG"
+              alt="icon add-to-cart"
               loading="eager"
             />
             <p className="sm:text-sm text-orange-950 hover:text-orange-500 text-lg font-semibold">Add to Card</p>

@@ -16,6 +16,7 @@ export default function Modal({ toggleModal, totalPrices }: typeModal) {
       <section className='w-full sm:w-fit px-5 py-7 sm:p-8 bg-white rounded-tl-3xl rounded-tr-3xl sm:rounded-2xl'>
         <img
           src="/icons/icon-order-confirmed.svg"
+          alt="icon order-confirmed"
         />
         <h2 className="pt-7 text-orange-950 font-bold text-3xl">Order Confirmed</h2>
         <p className="sm:pl-0 text-zinc-500 text-base pt-1 pb-8">We hope you enjoy your food</p>
