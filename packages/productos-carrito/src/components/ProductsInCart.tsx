@@ -12,7 +12,7 @@ export default function ProductsInCart() {
 
   return (
     <>
-      <section>
+      <section className=''>
         {
           productCart.length > 0 ? (
             <>
